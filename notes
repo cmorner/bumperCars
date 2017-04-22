@@ -1,0 +1,71 @@
+V.1
+	En 
+
+
+ 
+[ ] Måla rundade hörn 
+[ ] Skapa en controls modul
+	- Varje event som kommer från en av pilarna kommer att ändra bilens 
+		vektorer. Hur fungerar detta, fortsätter alla webbläsare att skicka
+		keyPressed events? Eller behöver jag se om en knapp trycktes ner under en viss frame
+		att den ändrar värdet på vektorerna en gång per frame tills att knappen släpps upp
+		igen. Hur fungerar det om flera knappar är nedtryckta samtidigt?
+
+[ ] Hur skall vektorerna förändras beroende på knappytryck
+[ ] Tänka ut hur rörelsen skrivs ut i vektorer
+[ ] Hantera när flera knappar trycks ner samtidigt
+	http://stackoverflow.com/questions/5203407/javascript-multiple-keys-pressed-at-once
+
+
+[X] Skapa en controls module
+[X] Skapa en provisorisk drawCar function i canvas modulen
+[X] Tänka ut vilka krav bilens storlek måste uppfylla. Den måste ha en mittpunkt
+[X] Skapa en myCar modul
+[X] Få bakgrunden av canvasen att målas vit
+
+Frågor:
+	ska bilarna kunna backa?
+
+
+
+Spelmotorn:
+	Interval med en viss uppdateringsfrekvens
+	Varje bil upptar en liten mängd pixlar som utgör dess area i spelet
+
+Arkitektur förbättringar:
+	Hur skall alla modulerna relatera till varandra? Vilka skall vara beroende av varandra
+		- Kanske rita upp detta på ett papper för att få en tydlig arkitektur
+	Hur skall modulerna interagera med varandra med behållen integritet?
+
+
+Kontroller:
+	Bilen styrs med piltangenterna
+	Bilens riktning och hastighet bestäms av två vektorer
+		Beroende på vilka tangenter man trycker så ändras vektorernas storlek
+		X och Y vektorer
+	
+	Hur påverkas vektorerna vid krock
+	Hur snabbt kan bilen rotera?
+	Beräkna kontaktpunkten mellan bilen och ett objekt.
+
+
+Multiplayer:
+	socketIO
+	Tar emot information om positionerna för en annan bil och visar bilen i mitt spel också
+	Om jag ändrar variabler i min egen version så kan jag ändra spelet som det uppfattas för andra
+		exempelvis ändra hur snabbt jag kan åka så
+
+Utvecklingsmiljö förbättring:
+	dela funktionsnamn mellan olika scriptfiler
+
+
+Grafiska ideér:
+	-Skön text som överskrift över spelet Bumper Cars i någon typ retrostil, som ingrosso loggan
+	Kunna välja färg på sin bil
+	- Banan har rundade kanter 
+	- göra så att bilarna är lätt 3D, dvs att man ser dom från olika vinklar beroende i vilken riktning
+		dom kör ifrån en
+
+
+Roliga idéer
+	Kunna tuta som också triggar ett ljud hos andra personer
