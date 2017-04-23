@@ -27,7 +27,7 @@ bc.myCar = (function () {
 	};
 
 	// Calculate new centerPosition for the next frame based on current carVectors
-	// 
+	// calculate vectors to changes in pixels of currentCenterPosition
 	obj.calculateNewCenterPosition = function () {
 	}
 
