@@ -16,7 +16,8 @@ bc.main = (function () {
 	}
 
 	obj.gameLoop = function () {
-	
+		bc.myCar.moveCar();
+		bc.myCar.applyFriction();
 		bc.canvas.drawGame();
 	}
 

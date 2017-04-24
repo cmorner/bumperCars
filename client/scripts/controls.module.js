@@ -3,6 +3,9 @@ var bc = bc || {};
 bc.controls = (function () {
 	var obj = {};
 
+
+
+
 	// Bind functions to key Events
 	obj.bindKeyEvents = function () {
 		document.onkeydown = function (e) {

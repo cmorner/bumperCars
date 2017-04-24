@@ -26,6 +26,8 @@ V.1
 Buggar:
 	directionInputHandler - om man rör sig med max speed i en riktning kan man inte under en frame
 	påbörja förändringen i den motsatta riktningen
+	- Bilen stannar inte helt utan forsätter åka väldigt långsamt. antagligen något med
+	applyFriction som inte fungerar rätt
 
 Frågor:
 	ska bilarna kunna backa?

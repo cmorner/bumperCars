@@ -82,12 +82,21 @@ bc.myCar = (function () {
 			carVectors.y -= frictionConstant;
 		}
 
+		// If carVector is under frictionConstant the car will never stop
+		if (Math.abs(carVectors.y) < frictionConstant) {
+			carVectors.y = 0;
+		}
+ 
+		if (Math.abs(carVectors.x) < frictionConstant) {
+			carVectors.x = 0;
+		}
 	}
 
 	// Calculate new position of car based of current carVectors
 	obj.moveCar = function () {
 		currentCenterPosition.x += carVectors.x;
 		currentCenterPosition.y += carVectors.y;
+	
 	}
 
 	// Returns an position object
