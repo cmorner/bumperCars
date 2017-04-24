@@ -23,9 +23,14 @@ V.1
 [X] Skapa en myCar modul
 [X] Få bakgrunden av canvasen att målas vit
 
+Buggar:
+	directionInputHandler - om man rör sig med max speed i en riktning kan man inte under en frame
+	påbörja förändringen i den motsatta riktningen
+
 Frågor:
 	ska bilarna kunna backa?
-
+	kan styrningen ta emot fler events per frame eller skall vi begränsa användarinputen
+	till en input per frame? Resultatet blir att man kan acellerera snabbare under en frame
 
 
 Spelmotorn:
