@@ -18,16 +18,11 @@
 	<div class="chat-area">
 		<h1>Cool Cats chat</h1>
 		<div class="chat-controls">
-			<form action="">
-				<input id="chat-message" type="text" name="chat-message" placeholder="Say something..">
-				<input id="chat-name" type="text" name="chat-name" maxlength="10" placeholder="Alias..">
-				<input id="send-message" type="submit" name="Send it!">
-			</form>
+			<input id="chat-message" type="text" name="chat-message" placeholder="Say something..">
+			<input id="chat-name" type="text" name="chat-name" maxlength="10" placeholder="Alias..">
+			<button id="send-message" onclick="sendMessage()">Say it</button>
 		</div>
-		<div class="messages-area">
-			<div class="message"><span class="message-chat-name">Greger: </span>Habladiba</div>
-			<div class="message"><span class="message-chat-name">Greger: </span>Hejsan hoppsan,Hejsan hoppsanHejsan hoppsanHejsan hoppsanHejsan hoppsanHejsan hoppsanHejsan hoppsanHejsan hoppsanHejsan hoppsanHejsan hoppsanHejsan hoppsanHejsan hoppsanHejsan hoppsan</div>
-			<div class="message"><span class="message-chat-name">Greger: </span>Habladiba</div>
+		<div id="messages-area" class="messages-area">
 		</div>
 	</div>
 

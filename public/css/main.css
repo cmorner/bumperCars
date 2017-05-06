@@ -65,8 +65,6 @@ canvas {
 	float: left;
 }
 
-
-
 .messages-area {
 	padding: 5px;
 	margin-top: 5px;
@@ -82,4 +80,8 @@ canvas {
 	margin: 5px;
 	padding-bottom: 5px;
 	border-bottom: 1px solid #cac8c8;
+}
+
+.message-chat-name {
+	font-weight: bold;
 }

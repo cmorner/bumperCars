@@ -17,7 +17,7 @@ V.1
 	http://stackoverflow.com/questions/5203407/javascript-multiple-keys-pressed-at-once
 
 
-[X] installera en sass kompilator
+[ ] installera en sass kompilator
 [X] Skapa en controls module
 [X] Skapa en provisorisk drawCar function i canvas modulen
 [X] Tänka ut vilka krav bilens storlek måste uppfylla. Den måste ha en mittpunkt
