@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bumper Cars Online</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+
+	<div class="header">
+		<h1>BumperCarsOnline.com</h1>
+		<h3>Bump into friends and strangers</h3>
+		<p>Your licence plate number is: <span>ABC123</span></p>
+	</div>
+
+	<canvas id="canvas" width="800" height="450"></canvas>
+
+	<div class="chat-area">
+		<h1>Cool Cats chat</h1>
+		<div class="chat-controls">
+			<form action="">
+				<input id="chat-message" type="text" name="chat-message" placeholder="Say something..">
+				<input id="chat-name" type="text" name="chat-name" maxlength="10" placeholder="Alias..">
+				<input id="send-message" type="submit" name="Send it!">
+			</form>
+		</div>
+		<div class="messages-area">
+			<div class="message"><span class="message-chat-name">Greger: </span>Habladiba</div>
+			<div class="message"><span class="message-chat-name">Greger: </span>Hejsan hoppsan,Hejsan hoppsanHejsan hoppsanHejsan hoppsanHejsan hoppsanHejsan hoppsanHejsan hoppsanHejsan hoppsanHejsan hoppsanHejsan hoppsanHejsan hoppsanHejsan hoppsanHejsan hoppsan</div>
+			<div class="message"><span class="message-chat-name">Greger: </span>Habladiba</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="socket.io/socket.io.js"></script>
+	
+	<!-- App -->
+	<script type="text/javascript" src="js/chat.module.js"></script>
+
+	<script type="text/javascript" src="js/myCar.module.js"></script>
+	<script type="text/javascript" src="js/controls.module.js"></script>
+	<script type="text/javascript" src="js/canvas.module.js"></script>
+	<script type="text/javascript" src="js/bumperCars.js"></script>
+</body>
+</html>
