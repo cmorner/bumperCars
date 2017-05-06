@@ -41,7 +41,3 @@ var publishReceivedMessage = function (messageObj) {
 }
 
 socket.on('chat message', publishReceivedMessage);
-
-// Get values of inputs
-// Clear inputs
-// Emit event
