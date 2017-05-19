@@ -37,7 +37,7 @@ bc.myCar = (function () {
 /*		var accelerationConstant = 0.6;
 		var maxSpeed = 4; // Max speed change of pixels per frame
 		switch (direction) {
-			case 'left':
+			case 'left/up': 'left':
 				if (Math.abs(carVectors.x) < maxSpeed){
 					carVectors.x = carVectors.x - accelerationConstant;
 				}
@@ -58,10 +58,6 @@ bc.myCar = (function () {
 				}
 				break;
 		}*/
-
-		switch (direction) {
-			case 'left'
-		}
 
 		console.log(direction);
 		// Changes carVectors based upon which direction is received
@@ -97,10 +93,37 @@ bc.myCar = (function () {
 	}
 
 	// Calculate new position of car based of current carVectors
-	obj.moveCar = function () {
-		currentCenterPosition.x += carVectors.x;
-		currentCenterPosition.y += carVectors.y;
-	
+	obj.moveCar = function (direction) {
+		switch (direction) {
+			case 'left':
+				currentCenterPosition.x -= 4;
+				break;
+			case 'left/up':
+				currentCenterPosition.x -= 4;
+				currentCenterPosition.y -= 4;
+				break;
+			case 'up':
+				currentCenterPosition.y -= 4;
+				break;
+			case 'right/up':
+				currentCenterPosition.y -= 4;
+				currentCenterPosition.x += 4;
+				break;
+			case 'right':
+				currentCenterPosition.x += 4;
+				break;
+			case 'right/down':
+				currentCenterPosition.x += 4;
+				currentCenterPosition.y += 4;
+				break;
+			case 'down':
+				currentCenterPosition.y += 4;
+				break;
+			case 'left/down':
+				currentCenterPosition.x -= 4;
+				currentCenterPosition.y += 4;
+				break;						
+		}
 	}
 
 	// Returns an position object
