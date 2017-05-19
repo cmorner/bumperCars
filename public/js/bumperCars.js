@@ -16,8 +16,10 @@ bc.main = (function () {
 	}
 
 	obj.gameLoop = function () {
+		var currentDirection = bc.controls.getCurrentDirection();
+		console.log('currentDirection: ', currentDirection);
 		bc.myCar.moveCar();
-		bc.myCar.applyFriction();
+		//bc.myCar.applyFriction();
 		bc.canvas.drawGame();
 	}
 

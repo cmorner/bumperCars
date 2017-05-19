@@ -34,7 +34,7 @@ bc.myCar = (function () {
 	// Handles user input relating to the direction of the car
 	obj.directionInputHandler = function (direction) {
 		// How much the carVectors are changed
-		var accelerationConstant = 0.6;
+/*		var accelerationConstant = 0.6;
 		var maxSpeed = 4; // Max speed change of pixels per frame
 		switch (direction) {
 			case 'left':
@@ -57,6 +57,10 @@ bc.myCar = (function () {
 					carVectors.y = carVectors.y + accelerationConstant;
 				}
 				break;
+		}*/
+
+		switch (direction) {
+			case 'left'
 		}
 
 		console.log(direction);
